@@ -49,7 +49,7 @@ class XpuScopeProfilerTest(TestCase):
                 rev_counter[counter[metric_name_in_json]] += 1
 
         if Verbose:
-            print(f"{rev_counter = }")
+            print(f"{rev_counter=}")
 
         # keys are amounts of certain metrics
         # only one dict element means all metrics have the same amount
@@ -88,10 +88,10 @@ class XpuScopeProfilerTest(TestCase):
                     self.count_metrics(event, count_c_metrics)
 
             if Verbose:
-                print(f"{count_names = }")
-                print(f"{count_cats = }")
-                print(f"{count_x_metrics = }")
-                print(f"{count_c_metrics = }")
+                print(f"{count_names=}")
+                print(f"{count_cats=}")
+                print(f"{count_x_metrics=}")
+                print(f"{count_c_metrics=}")
 
             metric_name_in_json_valid = sum(
                 name.startswith("metrics: ") for name in count_names
